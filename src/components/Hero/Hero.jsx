@@ -22,7 +22,7 @@ const Hero = () => {
         </article>
 
         <article className="hero-img animate" data-animate="slideInRight 2s">
-          <img src={myImg} className="hero-photo" alt="hero photo"/>
+          <img src={myImg} className="hero-photo" alt="me"/>
         </article>
       </div>
     </header>

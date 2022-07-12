@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import heroImg from '../../assets/my-img.jpg';
+import myImg from '../../assets/my-img.jpg';
 import SocialLinks from '../Navbar/SocialLinks/SocialLinks';
 import Btn from '../Btn/Btn';
 
@@ -22,7 +22,7 @@ const Hero = () => {
         </article>
 
         <article className="hero-img animate" data-animate="slideInRight 2s">
-          <img src={heroImg} className="hero-photo" />
+          <img src={myImg} className="hero-photo" alt="hero photo"/>
         </article>
       </div>
     </header>

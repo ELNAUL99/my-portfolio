@@ -1,3 +1,3 @@
 # my-portfolio
 
-Demo: https://portfolio-of-luan.herokuapp.com
+Demo: https://prismatic-rolypoly-7f4f92.netlify.app

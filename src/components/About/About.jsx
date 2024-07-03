@@ -30,7 +30,7 @@ const About = () => {
           <div className="animate" data-animate="slideInRight 2s">
             <h3>Education</h3>
             <div>
-              <p>2020-Present</p>
+              <p>2020-2023</p>
               <h4>Business Information Technology - LAB University of Applied Sciences</h4>
             </div>
             <div>

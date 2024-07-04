@@ -23,6 +23,19 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "netlify": {
+    "build": {
+      "publish": "out"
+    },
+    "plugins": [
+      {
+        "package": "@netlify/plugin-nextjs",
+        "inputs": {
+          "NETLIFY_NEXT_PLUGIN_SKIP": "true"
+        }
+      }
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

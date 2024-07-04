@@ -118,7 +118,7 @@ const Contact = () => {
                 </svg>
                 <span>
                   Website:
-                  <a href="#home"> https://prismatic-rolypoly-7f4f92.netlify.app</a>
+                  <a href="#home"> https://my-portfolio-three-mu-19.vercel.app</a>
                 </span>
               </li>
             </ul>

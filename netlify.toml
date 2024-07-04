@@ -12,7 +12,7 @@ origin = "config"
 [plugins.inputs]
 
 [build]
-publish = "/Users/macbook/Documents/GitHub/my-portfolio/out"
+publish = "out"
 publishOrigin = "config"
 command = "next build && next export"
 commandOrigin = "config"

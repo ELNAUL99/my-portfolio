@@ -18,13 +18,7 @@ const About = () => {
         <div className="about-center animate" data-animate="slideInLeft 2s">
           <div className="about-center-info">
             <h3>Luan Le</h3>
-            <p>
-              I'm a full-stack web developer from Viet Nam and currently studying and working in Finland.
-              I have developed few projects, most of them are for the study in the university.
-              I enjoy coding and the challenge of learning something new
-              everyday.
-              <br />When not online, I love hanging out with my friend, or traveling and photographing the landscape. I also enjoy reading books when I'm free.
-            </p>
+            <p>I’m a Junior Software/Game Developer and tech enthusiast based in Helsinki. I have a solid foundation in full‑stack web development with hands‑on experience across both frontend and backend projects. Skilled in React, C#/.NET, SQL, and REST APIs, I’ve built booking widgets, chatbots, and responsive websites that address real business needs. My background also includes game development with Unity and PyGame, which sharpened my problem‑solving and adaptability. Curious, resourceful, and motivated, I’m eager to contribute to impactful solutions and grow within a collaborative developer team.</p>
           </div>
 
           <div className="animate" data-animate="slideInRight 2s">

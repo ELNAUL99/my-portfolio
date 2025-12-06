@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="underline"></div>
 
           <h1>Welcome to my portfolio website</h1>
-          <p>Hello, I'm a full-stack developer based in Finland!</p>
+          <p>A Vietnamese Tech Enthusiast based in Nordic</p>
 
           <div className="hero-btn-wrapper">
             <Btn href="#about" name="about me" type="hero-btn" />

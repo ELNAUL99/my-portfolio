@@ -89,7 +89,7 @@ const Contact = () => {
                 </svg>
                 <span className="contact-phone">
                   Phone:
-                  <a href="tel:+84366270052"> +358 41 7516313</a>
+                  <a href="tel:+84366270052"> +358 41 751 6313</a>
                 </span>
               </li>
               <li className="contact-info-item">
@@ -119,6 +119,7 @@ const Contact = () => {
                 <span>
                   Website:
                   <a href="#home"> https://my-portfolio-three-mu-19.vercel.app</a>
+                  <a href="https://scooter5826.itch.io"> (Games Portfolio)</a>
                 </span>
               </li>
             </ul>

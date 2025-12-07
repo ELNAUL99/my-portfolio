@@ -28,7 +28,15 @@ const Container = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          more projects
+          Github Profile
+        </a>
+        <a
+          href="https://github.com/ELNAUL99"
+          className="btn project-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Games Profile
         </a>
       </div>
     </section>

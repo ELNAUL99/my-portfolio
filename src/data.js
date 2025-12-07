@@ -20,8 +20,8 @@ export const projects = [
     id: 3,
     img: 'https://media.giphy.com/media/gNGTPF5Q0qQ8B8cN8J/giphy.gif',
     title: 'The Goblin Shop',
-    description: `An online web shop selling our own product for manga and comic lovers. I did all the interface in this project because of the difference in the OS (I use MacOS, while others use Windows, and the setup for those xampp files are quite difficult)`,
-    tags: ['PrestaShop', 'PHP', 'XAMPP', 'InVision'],
+    description: `An online web shop selling our own product for manga and comic lovers. Users can browse products, add to cart, and checkout securely.`,
+    tags: ['PHP', 'XAMPP', 'InVision', 'PrestaShop'],
     ghLink: 'https://github.com/ELNAUL99/Goblin-Shop',
   },
   {

@@ -118,8 +118,7 @@ const Contact = () => {
                 </svg>
                 <span>
                   Website:
-                  <a href="#home"> https://my-portfolio-three-mu-19.vercel.app</a>
-                  <a href="https://scooter5826.itch.io"> (Games Portfolio)</a>
+                  <a href="#home"> (Portfolio Website)</a> <a href="https://scooter5826.itch.io"> (Games Portfolio)</a>
                 </span>
               </li>
             </ul>

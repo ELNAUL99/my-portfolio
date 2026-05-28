@@ -18,7 +18,7 @@ const About = () => {
         <div className="about-center animate" data-animate="slideInLeft 2s">
           <div className="about-center-info">
             <h3>Luan Le</h3>
-            <p>I’m a Junior Software/Game Developer and tech enthusiast based in Helsinki. I have a solid foundation in full‑stack web development with hands‑on experience across both frontend and backend projects. Skilled in React, C#/.NET, SQL, and REST APIs, I’ve built booking widgets, chatbots, and responsive websites that address real business needs. My background also includes game development with Unity and PyGame, which sharpened my problem‑solving and adaptability. Curious, resourceful, and motivated, I’m eager to contribute to impactful solutions and grow within a collaborative developer team.</p>
+            <p>I’m a Full Stack Developer based in Helsinki with hands‑on experience building and operating production systems end‑to‑end. I work across backend, frontend, and infrastructure using Next.js, TypeScript, React, and C#/.NET, with a strong focus on reliability, performance, and maintainability. I’ve designed and delivered real‑world applications — booking systems, full‑stack platforms, and AI‑powered services — taking full ownership from architecture to deployment. I work in a DevOps‑oriented way, using CI/CD pipelines, testing, and monitoring to keep systems stable and scalable. I’m especially interested in building software that holds up under real usage, with strong attention to user experience and business impact.</p>
           </div>
 
           <div className="animate" data-animate="slideInRight 2s">

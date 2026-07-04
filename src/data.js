@@ -7,7 +7,7 @@ export const projects = [
     img: '',
     video: '/projects/ReguLens.mov',
     title: 'ReguLens',
-    description: `A 7-agent LLM pipeline (Leader → Intake → Extraction → Retrieval → Assessment → Critique → Report) that produces cited legal opinions on EU AI Act compliance from plain-English descriptions or uploaded technical documents. Uses RAG-based regulatory retrieval (bge-m3 embeddings + pgvector) with every claim validated against Zod schemas before persistence.`,
+    description: `Grew out of Lexicon.AI, the 48-hour prototype that took shared 1st place at the Norrin Challenge (AI for Good Hackathon). ReguLens is a 7-agent LLM pipeline (Leader → Intake → Extraction → Retrieval → Assessment → Critique → Report) that produces cited legal opinions on EU AI Act compliance from plain-English descriptions or uploaded technical documents. Uses RAG-based regulatory retrieval (bge-m3 embeddings + pgvector) with every claim validated against Zod schemas before persistence.`,
     tags: ['React 19', 'TypeScript', 'TanStack Start', 'Supabase', 'Mistral', 'Llama-3.1-8B', 'RAG'],
     liveLink: 'https://regulens-mu.vercel.app',
     ghLink: 'https://github.com/ELNAUL99/regulens',

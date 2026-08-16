@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Awards.css';
+import DocumentModal from '../DocumentModal/DocumentModal';
 
 const Awards = () => {
+  const [cvOpen, setCvOpen] = useState(false);
   return (
     <section className="section awards" id="awards">
       <div className="section-center">
@@ -77,10 +79,25 @@ const Awards = () => {
               >
                 see regulens
               </a>
+              <button
+                type="button"
+                className="btn project-btn"
+                onClick={() => setCvOpen(true)}
+              >
+                view cv
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      <DocumentModal
+        isOpen={cvOpen}
+        onClose={() => setCvOpen(false)}
+        src="/documents/Luan-Le-CV.pdf"
+        title="Luan Le — CV"
+        downloadName="Luan-Le-CV.pdf"
+      />
     </section>
   );
 };

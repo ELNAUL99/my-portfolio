@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css';
 import myImg from '../../assets/my-img.jpg';
 import SocialLinks from '../Navbar/SocialLinks/SocialLinks';
 import Btn from '../Btn/Btn';
+import DocumentModal from '../DocumentModal/DocumentModal';
+
+const DOCS = {
+  cv: {
+    title: 'Luan Le — CV',
+    src: '/documents/Luan-Le-CV.pdf',
+    downloadName: 'Luan-Le-CV.pdf',
+  },
+  cover: {
+    title: 'Luan Le — Cover Letter',
+    src: '/documents/Luan-Le-Cover-Letter.pdf',
+    downloadName: 'Luan-Le-Cover-Letter.pdf',
+  },
+};
 
 const Hero = () => {
+  const [openDoc, setOpenDoc] = useState(null);
+  const doc = openDoc ? DOCS[openDoc] : null;
+
   return (
     <header className="section hero">
       <div className="section-center hero-center">
@@ -17,6 +34,20 @@ const Hero = () => {
           <div className="hero-btn-wrapper">
             <Btn href="#about" name="about me" type="hero-btn" />
             <Btn href="#projects" name="projects" type="hero-btn" />
+            <button
+              type="button"
+              className="btn hero-btn"
+              onClick={() => setOpenDoc('cv')}
+            >
+              view cv
+            </button>
+            <button
+              type="button"
+              className="btn hero-btn"
+              onClick={() => setOpenDoc('cover')}
+            >
+              cover letter
+            </button>
           </div>
           <SocialLinks />
         </article>
@@ -25,6 +56,14 @@ const Hero = () => {
           <img src={myImg} className="hero-photo" alt="me"/>
         </article>
       </div>
+
+      <DocumentModal
+        isOpen={!!doc}
+        onClose={() => setOpenDoc(null)}
+        src={doc?.src}
+        title={doc?.title}
+        downloadName={doc?.downloadName}
+      />
     </header>
   );
 };

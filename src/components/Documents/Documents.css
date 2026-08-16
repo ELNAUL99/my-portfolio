@@ -1,0 +1,21 @@
+.documents .section-title {
+  margin-bottom: 2.5rem;
+}
+
+.documents-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.documents-btn {
+  min-width: 12rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}

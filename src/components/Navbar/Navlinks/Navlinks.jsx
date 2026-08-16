@@ -19,6 +19,9 @@ const Navlinks = ({ setToggleMenu }) => {
         <a href="#awards">awards</a>
       </li>
       <li onClick={() => setToggleMenu(false)}>
+        <a href="#documents">resume</a>
+      </li>
+      <li onClick={() => setToggleMenu(false)}>
         <a href="#contact">contact</a>
       </li>
     </>

@@ -2,6 +2,12 @@
   margin-bottom: 3rem;
 }
 
+.award-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 .award-card {
   display: grid;
   gap: 2rem;

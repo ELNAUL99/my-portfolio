@@ -5,22 +5,14 @@ import SocialLinks from '../Navbar/SocialLinks/SocialLinks';
 import Btn from '../Btn/Btn';
 import DocumentModal from '../DocumentModal/DocumentModal';
 
-const DOCS = {
-  cv: {
-    title: 'Luan Le — CV',
-    src: '/documents/Luan-Le-CV.pdf',
-    downloadName: 'Luan-Le-CV.pdf',
-  },
-  cover: {
-    title: 'Luan Le — Cover Letter',
-    src: '/documents/Luan-Le-Cover-Letter.pdf',
-    downloadName: 'Luan-Le-Cover-Letter.pdf',
-  },
+const CV = {
+  title: 'Luan Le — CV',
+  src: '/documents/Luan-Le-CV.pdf',
+  downloadName: 'Luan-Le-CV.pdf',
 };
 
 const Hero = () => {
-  const [openDoc, setOpenDoc] = useState(null);
-  const doc = openDoc ? DOCS[openDoc] : null;
+  const [cvOpen, setCvOpen] = useState(false);
 
   return (
     <header className="section hero">
@@ -37,16 +29,9 @@ const Hero = () => {
             <button
               type="button"
               className="btn hero-btn"
-              onClick={() => setOpenDoc('cv')}
+              onClick={() => setCvOpen(true)}
             >
               view cv
-            </button>
-            <button
-              type="button"
-              className="btn hero-btn"
-              onClick={() => setOpenDoc('cover')}
-            >
-              cover letter
             </button>
           </div>
           <SocialLinks />
@@ -58,11 +43,11 @@ const Hero = () => {
       </div>
 
       <DocumentModal
-        isOpen={!!doc}
-        onClose={() => setOpenDoc(null)}
-        src={doc?.src}
-        title={doc?.title}
-        downloadName={doc?.downloadName}
+        isOpen={cvOpen}
+        onClose={() => setCvOpen(false)}
+        src={CV.src}
+        title={CV.title}
+        downloadName={CV.downloadName}
       />
     </header>
   );

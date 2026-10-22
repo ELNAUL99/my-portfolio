@@ -12,12 +12,12 @@ A single-page site with the following sections:
 
 | Section | Purpose |
 |---|---|
-| **Hero** | Intro, socials, quick CTAs (About, Projects, View CV, Cover Letter) |
+| **Hero** | Intro, socials, quick CTAs (About, Projects, View CV) |
 | **About** | Professional summary + education |
 | **Skills** | Icon grid of technologies (theme-aware SVGs) |
 | **Projects** | Featured work with autoplay video, live demo + source links |
 | **Honors & Awards** | Norrin Challenge (AI for Good Hackathon) 1st-place win |
-| **Resume & Cover Letter** | Two buttons that open the PDFs in an in-page viewer |
+| **Resume** | A button that opens the CV in an in-page viewer |
 | **Contact** | Contact info + Netlify form |
 
 ---
@@ -39,7 +39,7 @@ CRA is still used because the site is simple, prerendered HTML is fine, and Verc
 my-portfolio/
 ├── public/
 │   ├── awards/norrin/       # Award photo(s)
-│   ├── documents/           # CV + cover letter PDFs
+│   ├── documents/           # CV PDF
 │   ├── projects/            # Project demo videos (.mov)
 │   ├── my-img.jpg           # Hero portrait
 │   └── index.html
@@ -57,7 +57,7 @@ my-portfolio/
 │       │   └── ...uses Project/ for each card
 │       ├── Project/         # Single project card (image or video)
 │       ├── Awards/          # Honors & Awards section
-│       ├── Documents/       # Resume & Cover Letter section
+│       ├── Documents/       # Resume section
 │       ├── DocumentModal/   # Reusable in-page PDF viewer
 │       ├── Contact/         # Netlify contact form
 │       ├── Footer/
@@ -120,14 +120,13 @@ ffmpeg -i input.mov -vcodec h264 -acodec aac -movflags +faststart output.mp4
 
 Currently a single hardcoded card in [`src/components/Awards/Awards.jsx`](src/components/Awards/Awards.jsx). Edit the JSX to change copy or swap the photo (stored in `public/awards/norrin/hero.jpg`).
 
-### CV & Cover Letter
+### CV
 
-Replace the PDFs in `public/documents/` keeping the same filenames:
+Replace the PDF in `public/documents/` keeping the same filename:
 
 - `public/documents/Luan-Le-CV.pdf`
-- `public/documents/Luan-Le-Cover-Letter.pdf`
 
-The Hero and Resume & Cover Letter sections both point at these paths via [`DocumentModal`](src/components/DocumentModal/DocumentModal.jsx).
+The Hero and Resume sections both point at this path via [`DocumentModal`](src/components/DocumentModal/DocumentModal.jsx).
 
 ### Skills
 

@@ -2,24 +2,14 @@ import React, { useState } from 'react';
 import './Documents.css';
 import DocumentModal from '../DocumentModal/DocumentModal';
 
-const DOCS = {
-  cv: {
-    label: 'View CV',
-    title: 'Luan Le — CV',
-    src: '/documents/Luan-Le-CV.pdf',
-    downloadName: 'Luan-Le-CV.pdf',
-  },
-  cover: {
-    label: 'View Cover Letter',
-    title: 'Luan Le — Cover Letter',
-    src: '/documents/Luan-Le-Cover-Letter.pdf',
-    downloadName: 'Luan-Le-Cover-Letter.pdf',
-  },
+const CV = {
+  title: 'Luan Le — CV',
+  src: '/documents/Luan-Le-CV.pdf',
+  downloadName: 'Luan-Le-CV.pdf',
 };
 
 const Documents = () => {
-  const [openDoc, setOpenDoc] = useState(null);
-  const doc = openDoc ? DOCS[openDoc] : null;
+  const [cvOpen, setCvOpen] = useState(false);
 
   return (
     <section className="section documents" id="documents">
@@ -29,7 +19,7 @@ const Documents = () => {
             className="animate"
             data-animate="tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both"
           >
-            Resume &amp; Cover Letter
+            Resume
           </h2>
           <div className="underline"></div>
         </div>
@@ -41,26 +31,19 @@ const Documents = () => {
           <button
             type="button"
             className="btn documents-btn"
-            onClick={() => setOpenDoc('cv')}
+            onClick={() => setCvOpen(true)}
           >
             view cv
-          </button>
-          <button
-            type="button"
-            className="btn documents-btn"
-            onClick={() => setOpenDoc('cover')}
-          >
-            view cover letter
           </button>
         </div>
       </div>
 
       <DocumentModal
-        isOpen={!!doc}
-        onClose={() => setOpenDoc(null)}
-        src={doc?.src}
-        title={doc?.title}
-        downloadName={doc?.downloadName}
+        isOpen={cvOpen}
+        onClose={() => setCvOpen(false)}
+        src={CV.src}
+        title={CV.title}
+        downloadName={CV.downloadName}
       />
     </section>
   );
